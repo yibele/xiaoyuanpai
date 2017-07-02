@@ -1,0 +1,25 @@
+.scroll-view {
+    margin-bottom: 40rpx;
+}
+.scroll {
+    margin-top:40rpx;
+    font-size: 48rpx;
+}
+
+.box {
+  display: inline-block;
+  margin-right: 36rpx;
+}
+
+.box .box_img {
+    width: 360rpx;
+    height: 280rpx;
+    background: #ccc;
+    border-radius: 10rpx;
+}
+
+.box .box_des {
+    line-height: 30rpx;
+    margin-top:10rpx;
+    font-size: 11px;
+}

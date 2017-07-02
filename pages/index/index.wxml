@@ -1,0 +1,94 @@
+<view class="container">
+    <view class="scroll-view">
+        <view class="title">
+            正在参加
+        </view>
+        <view class="scroll">
+            <scroll-view scroll-x="true" style=" white-space: nowrap; display: flex" >
+            <!-- display: inline-block-->
+             <view class="box">
+                 <view class="box_img"></view>
+                 <view class="box_des">
+                     <text>{{des}}</text>
+                 </view>
+             </view>
+             <view class="box">
+                 <view class="box_img"></view>
+                 <view class="box_des">
+                     <text>{{des}}</text>
+                 </view>
+             </view>
+            </scroll-view>
+        </view>
+    </view>
+
+    <view class="scroll-view">
+        <view class="title">
+            游戏 & 桌游
+        </view>
+        <view class="scroll">
+            <scroll-view scroll-x="true" style=" white-space: nowrap; display: flex" >
+            <!-- display: inline-block-->
+             <view class="box">
+                 <view class="box_img"></view>
+                 <view class="box_des">
+                     <text>{{des}}</text>
+                 </view>
+             </view>
+             <view class="box">
+                 <view class="box_img"></view>
+                 <view class="box_des">
+                     <text>{{des}}</text>
+                 </view>
+             </view>
+             <view class="box">
+                 <view class="box_img"></view>
+                 <view class="box_des">
+                     <text>{{des}}</text>
+                 </view>
+             </view>
+             <view class="box">
+                 <view class="box_img"></view>
+                 <view class="box_des">
+                     <text>{{des}}</text>
+                 </view>
+             </view>
+            </scroll-view>
+        </view>
+    </view>
+
+    <view class="scroll-view">
+        <view class="title">
+            电影 & 话剧
+        </view>
+        <view class="scroll">
+            <scroll-view scroll-x="true" style=" white-space: nowrap; display: flex" >
+            <!-- display: inline-block-->
+             <view class="box">
+                 <view class="box_img"></view>
+                 <view class="box_des">
+                     <text>{{des}}</text>
+                 </view>
+             </view>
+             <view class="box">
+                 <view class="box_img"></view>
+                 <view class="box_des">
+                     <text>{{des}}</text>
+                 </view>
+             </view>
+             <view class="box">
+                 <view class="box_img"></view>
+                 <view class="box_des">
+                     <text>{{des}}</text>
+                 </view>
+             </view>
+             <view class="box">
+                 <view class="box_img"></view>
+                 <view class="box_des">
+                     <text>{{des}}</text>
+                 </view>
+             </view>
+            </scroll-view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,41 @@
+<view class="container">
+  <view class="header">
+    <view class="header_img"></view>
+    <view class="header_title">狼人杀走起！</view>
+  </view>
+  <view class="act_comment">【我们这样子玩狼人杀】，希望你能 参加，周日在学校里面组织狼人杀活动。
+  </view>
+</view>
+<button type="primary">参加活动</button>
+<view class="hr"></view>
+<view class="container">
+  <view class="content">
+    <view class="act_des">
+      <image src="/images/clock.png" style="width:26rpx;height:26rpx;margin-right:26rpx;"> </image>
+      <view class="act_des_detail">
+        <view class="act_time act_space_lt">7 月 1日 星期六</view>
+        <view class="act_time_hour act_space_lg">10:00</view>
+      </view>
+    </view>
+    <view class="act_des">
+      <image src="/images/location.png" style="width:26rpx;height:26rpx;margin-right:26rpx;"> </image>
+      <view class="act_des_detail">
+        <view class="act_location">首都师范大学北二513室</view>
+        <view class="act_time_hour act_space_lg">首都师范大学北京 北二区 北京，中国</view>
+      </view>
+    </view>
+    <view class="act_des">
+        <image src="/images/admin.png" style="width:26rpx;height:26rpx;margin-right:26rpx;"> </image>
+      <view class="act_des_detail">
+    <view class="act_user act_space act_space_lg">主持人: yibele </view>
+      </view>
+    </view>
+  </view>
+  <view>
+    <view class="act_left">3人报名， 还需11人</view>
+    <view class="act_head"></view>
+  </view>
+  <view class="act_content">
+      
+  </view>
+</view>

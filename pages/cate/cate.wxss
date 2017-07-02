@@ -1,0 +1,22 @@
+.cate {
+    display: flex;
+}
+
+
+.cate .cate_com {
+    margin-top: 40rpx;
+    margin-right: 30rpx;
+}
+
+.cate .cate_img {
+    height: 240rpx;
+    width: 320rpx;
+    background-color: #ccc;
+    border-radius: 10rpx;
+}
+.cate_com .cate_des {
+    font-size: 30rpx;
+    margin-top : 20rpx;
+    color: #565555;
+    font-weight: 300;
+}
