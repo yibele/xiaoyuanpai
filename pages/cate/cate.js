@@ -62,5 +62,14 @@ Page({
    */
   onShareAppMessage: function () {
   
+  },
+
+  /**
+   * 转到互动列表页面
+   */
+  toDetail: function () {
+    wx.navigateTo({
+      url: '/pages/detail/detail',
+    })
   }
 })

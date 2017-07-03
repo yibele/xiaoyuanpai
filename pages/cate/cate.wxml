@@ -3,28 +3,28 @@
         有你想要
     </view>
     <view class="cate">
-        <view class="cate_com">
+        <view class="cate_com" bindtap="toDetail">
             <view class="cate_img"></view>
             <view class="cate_des">桌游</view>
         </view>
-        <view class="cate_com">
+        <view class="cate_com"  bindtap="toDetail">
             <view class="cate_img"></view>
             <view class="cate_des">运动 & 健身</view>
         </view>
 
     </view>
     <view class="cate">
-        <view class="cate_com">
+        <view class="cate_com"  bindtap="toDetail">
             <view class="cate_img"></view>
             <view class="cate_des">运动 & 健身</view>
         </view>
-        <view class="cate_com">
+        <view class="cate_com"  bindtap="toDetail">
             <view class="cate_img"></view>
             <view class="cate_des">运动 & 健身</view>
         </view>
     </view>
     <view class="cate">
-        <view class="cate_com">
+        <view class="cate_com"  bindtap="toDetail">
             <view class="cate_img"></view>
             <view class="cate_des">运动 & 健身</view>
         </view>
