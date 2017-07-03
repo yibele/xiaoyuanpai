@@ -1,10 +1,10 @@
 {
   "pages":[
+    "pages/user/user",
+    "pages/detail/detail",
     "pages/index/index",
     "pages/act/act",
-    "pages/detail/detail",
     "pages/cate/cate",
-    "pages/user/user",
     "pages/create/create"
   ],
   "window":{

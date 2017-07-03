@@ -8,12 +8,17 @@
 </view>
 <button type="primary">参加活动</button>
 <view class="hr"></view>
+<view class="out" style="font-size:30rpx;margin-top:20rpx;margin-left:40rpx;">
+    已经加入！谢谢参与!
+    <image src="/images/close.png" mode="widthFix" style="width:30rpx;float:right;margin-right:40rpx"></image>
+</view>
+<view class="hr"></view>
 <view class="container">
   <view class="content">
     <view class="act_des">
       <image src="/images/clock.png" style="width:26rpx;height:26rpx;margin-right:26rpx;"> </image>
       <view class="act_des_detail">
-        <view class="act_time act_space_lt">7 月 1日 星期六</view>
+        <view class="act_time act_space_lt">7月1日 星期六</view>
         <view class="act_time_hour act_space_lg">10:00</view>
       </view>
     </view>
@@ -33,9 +38,25 @@
   </view>
   <view>
     <view class="act_left">3人报名， 还需11人</view>
-    <view class="act_head"></view>
+    <view class="act_head">
+        <image src="https://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83eqcXWBAsibvRl9pcLGiabibQfA7aq3Q6Dic3f0OPZyONqxgZFznHUrTOo3iccDDcuybwJphrj6Qaq8URJg/0" mode="widthFix"
+        style="width:70rpx;heigh:70rpx;border-radius:45rpx;margin-top:20rpx;margin-right:10rpx" ></image>
+        <image src="https://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83eqcXWBAsibvRl9pcLGiabibQfA7aq3Q6Dic3f0OPZyONqxgZFznHUrTOo3iccDDcuybwJphrj6Qaq8URJg/0" mode="widthFix"
+        style="width:70rpx;heigh:70rpx;border-radius:45rpx;margin-top:20rpx;" ></image>
+    </view>
   </view>
   <view class="act_content">
-      
+      Lorem ipsum dolor sit amet, consectetur
+  adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna
+  aliqua. Ut enim ad minim veniam,
+  quis nostrud exercitation ullamco laboris nisi
+  ut aliquip ex ea commodoconsequat. Duis aute
+   irure dolor in reprehenderit in voluptate velit
+   essecillum dolore eu fugiat nulla pariatur.
+  Excepteur sint occaecat cupidatat non
+  proident, sunt in culpa qui officia deserunt
+  mollit anim id est laborum.
+
   </view>
 </view>

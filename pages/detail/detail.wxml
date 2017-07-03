@@ -4,7 +4,7 @@
     </view>
     <view class="hr"></view>
     <view class="cate_detail">
-        <view class="cate_single">
+        <view class="cate_single" bindtap="toAct">
             <view class="detail_img"></view>
             <view class="cate_detail_des">
                 <view class="detail_title font-30 margin-bot-10">

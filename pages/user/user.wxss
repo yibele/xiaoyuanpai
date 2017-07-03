@@ -1,1 +1,41 @@
-/* pages/user/user.wxss */
+.container {
+    padding-top: 40rpx;
+    padding-left: 0rpx;
+    padding-bottom: 40rpx;
+}
+.user_center {
+    text-align: center;
+    font-size: 26rpx;
+    color: #949494;
+}
+.user_head {
+}
+
+.user_name {
+}
+.act_detail {
+    display: flex;
+    margin-top:10rpx;
+}
+.detail_com {
+    font-size: 26rpx;
+    margin:0 auto;
+}
+button {
+    border-radius: 0rpx;
+    font-size: 30rpx;
+    padding: 0rpx;
+    margin: 0rpx;
+}
+.create_img {
+    margin-top:20rpx;
+    margin-left: 40rpx;
+    width: 100rpx;
+    height: 100rpx;
+    overflow: hidden;
+}
+.create_text {
+    margin-top:20rpx;
+    margin-left: 40rpx;
+    font-size: 30rpx;
+}

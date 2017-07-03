@@ -13,7 +13,7 @@
 
 .box .box_img {
     width: 360rpx;
-    height: 280rpx;
+    height: 240rpx;
     background: #ccc;
     border-radius: 10rpx;
 }

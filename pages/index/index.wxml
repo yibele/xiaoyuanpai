@@ -65,7 +65,9 @@
             <scroll-view scroll-x="true" style=" white-space: nowrap; display: flex" >
             <!-- display: inline-block-->
              <view class="box">
-                 <view class="box_img"></view>
+                 <view class="box_img">
+                     <image src="/images/sport.jpeg" class="box_img" bindtap="toDetail"></image>
+                 </view>
                  <view class="box_des">
                      <text>{{des}}</text>
                  </view>

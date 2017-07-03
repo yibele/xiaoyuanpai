@@ -1,2 +1,51 @@
-<!--pages/user/user.wxml-->
-<text>pages/user/user.wxml</text>
+<view class="container">
+     <view class="head">
+         <view class="user_head user_center">
+             <image src="https://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83eqcXWBAsibvRl9pcLGiabibQfA7aq3Q6Dic3f0OPZyONqxgZFznHUrTOo3iccDDcuybwJphrj6Qaq8URJg/0"
+                 mode="widthFix" style="width:120rpx;height:120rpx;border-radius:60rpx"
+             ></image>
+         </view>
+         <view class="user_name user_center">yibele</view>
+         <view class="user_city user_center">北京市</view>
+     </view>
+     <view class="act_detail">
+         <view class="now detail_com">
+             <view style="font-weight:900">2</view>
+         </view>
+         <view class="my detail_com">
+             <view style="font-weight:900">2</view>
+         </view>
+         <view class="al detail_com">
+             <view style="font-weight:900">2</view>
+         </view>
+     </view>
+     <view class="act_detail">
+         <view class="now detail_com">
+             <view>正在参加</view>
+         </view>
+         <view class="my detail_com">
+             <view>我创建的</view>
+         </view>
+         <view class="al detail_com">
+             <view>已完成</view>
+         </view>
+     </view>
+     <view class="hr"></view>
+     <button type="primary">创建活动</button>
+     <view class="content">
+         <view class="create_text">
+            正在参加
+         </view>
+         <view class="hr"></view>
+         <view class="creat">
+             <view class="create_img">
+                 <image src="/images/sport.jpeg" mode="widthFix"
+                     style="height:100%"
+                 ></image>
+             </view>
+             <view class="create_content">
+                 狼人杀走起！
+             </view>
+         </view>
+     </view>
+</view>

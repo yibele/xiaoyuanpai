@@ -27,10 +27,12 @@
 .act_comment {
     font-size: 30rpx;
     font-weight: bold;
+    margin-top: 20rpx;
+    margin-bottom: 20rpx;
 }
 button {
     border-radius: 0rpx;
-    font-size: 34rpx;
+    font-size: 30rpx;
 }
 .act_des {
     font-size:26rpx;
@@ -49,4 +51,17 @@ button {
 .act_left {
     font-size: 26rpx;
     font-weight: bold;
+}
+
+.diejia {
+    position: relative;
+    z-index: 1;
+}
+.act_content {
+    font-family: PingFang SC;
+    margin-top : 20rpx;
+    font-size: 28rpx;
+    color:#9A9A9A;
+    line-height: 40rpx;
+    font-weight: 300;
 }
