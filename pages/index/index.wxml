@@ -1,96 +1,47 @@
 <view class="container">
+    <!-- 正在参加 -->
     <view class="scroll-view">
-        <view class="title">
-            正在参加
-        </view>
-        <view class="scroll">
-            <scroll-view scroll-x="true" style=" white-space: nowrap; display: flex" >
-            <!-- display: inline-block-->
-             <view class="box">
-                 <view class="box_img"></view>
-                 <view class="box_des">
-                     <text>{{des}}</text>
-                 </view>
-             </view>
-             <view class="box">
-                 <view class="box_img"></view>
-                 <view class="box_des">
-                     <text>{{des}}</text>
-                 </view>
-             </view>
-            </scroll-view>
-        </view>
+        <block wx:if="{{act_count !=0}}">
+            <view class="title">
+                正在参加
+            </view>
+            <view class="scroll">
+                <scroll-view scroll-x="true" style=" white-space: nowrap; display: flex">
+                    <!-- display: inline-block-->
+                    <view class="box" wx:for="{{user_act}}">
+                        <view>
+                            <image src="{{item.act_img}}" class="box_img" mode="aspectFill"></image>
+                        </view>
+                        <view class="box_des">
+                            {{item.act_comment}}
+                        </view>
+                    </view>
+                </scroll-view>
+            </view>
+        </block>
     </view>
 
-    <view class="scroll-view">
+    <!-- 活动分类 展示 -->
+    <view class="scroll-view" wx:for="{{index_data}}">
+        <block wx:if="{{item.act_count !=0}}">
         <view class="title">
-            游戏 & 桌游
+            {{item.tag_name}}
         </view>
         <view class="scroll">
-            <scroll-view scroll-x="true" style=" white-space: nowrap; display: flex" >
-            <!-- display: inline-block-->
-             <view class="box">
-                 <view class="box_img"></view>
-                 <view class="box_des">
-                     <text>{{des}}</text>
-                 </view>
-             </view>
-             <view class="box">
-                 <view class="box_img"></view>
-                 <view class="box_des">
-                     <text>{{des}}</text>
-                 </view>
-             </view>
-             <view class="box">
-                 <view class="box_img"></view>
-                 <view class="box_des">
-                     <text>{{des}}</text>
-                 </view>
-             </view>
-             <view class="box">
-                 <view class="box_img"></view>
-                 <view class="box_des">
-                     <text>{{des}}</text>
-                 </view>
-             </view>
+            <scroll-view scroll-x="true" style=" white-space: nowrap; display: flex">
+                <!-- display: inline-block-->
+                <view class="box" wx:for="{{item}}" wx:for-item="v">
+                    <block wx:if="{{v.act_img !=null}}">
+                    <view>
+                        <image src="{{v.act_img}}" class="box_img" mode="aspectFill"></image>
+                    </view>
+                    <view class="box_des">
+                        <text>{{v.act_comment}}</text>
+                    </view>
+                </block>
+                </view>
             </scroll-view>
         </view>
-    </view>
-
-    <view class="scroll-view">
-        <view class="title">
-            电影 & 话剧
-        </view>
-        <view class="scroll">
-            <scroll-view scroll-x="true" style=" white-space: nowrap; display: flex" >
-            <!-- display: inline-block-->
-             <view class="box">
-                 <view class="box_img">
-                     <image src="/images/sport.jpeg" class="box_img" bindtap="toAct"></image>
-                 </view>
-                 <view class="box_des">
-                     <text>{{des}}</text>
-                 </view>
-             </view>
-             <view class="box">
-                 <view class="box_img"></view>
-                 <view class="box_des">
-                     <text>{{des}}</text>
-                 </view>
-             </view>
-             <view class="box">
-                 <view class="box_img"></view>
-                 <view class="box_des">
-                     <text>{{des}}</text>
-                 </view>
-             </view>
-             <view class="box">
-                 <view class="box_img"></view>
-                 <view class="box_des">
-                     <text>{{des}}</text>
-                 </view>
-             </view>
-            </scroll-view>
-        </view>
+    </block>
     </view>
 </view>

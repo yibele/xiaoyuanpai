@@ -22,4 +22,7 @@
     line-height: 30rpx;
     margin-top:10rpx;
     font-size: 11px;
+    width:360rpx;
+    white-space: normal;
+    font-weight:bold    
 }
