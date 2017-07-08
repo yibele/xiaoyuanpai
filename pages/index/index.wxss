@@ -6,6 +6,15 @@
     font-size: 48rpx;
 }
 
+.title .more {
+    font-size: 24rpx;
+    font-weight: bold;
+    color: #FC8383;
+    float: right;
+    margin-right: 40rpx;
+    line-height: 40rpx;
+}
+
 .box {
   display: inline-block;
   margin-right: 36rpx;
@@ -14,8 +23,23 @@
 .box .box_img {
     width: 360rpx;
     height: 240rpx;
-    background: #ccc;
     border-radius: 10rpx;
+}
+
+.mask {
+    position: absolute;
+    top:0;
+    left: 0;
+    opacity: .4;
+    color: white;
+    background: red;
+    z-index: 10;
+    white-space: normal;
+}
+
+.mask .actName {
+    margin:20rpx;
+    font-size: 34rpx;
 }
 
 .box .box_des {
@@ -24,5 +48,5 @@
     font-size: 11px;
     width:360rpx;
     white-space: normal;
-    font-weight:bold    
+    font-weight:bold
 }

@@ -3,30 +3,9 @@
         有你想要
     </view>
     <view class="cate">
-        <view class="cate_com" bindtap="toDetail">
-            <view class="cate_img"></view>
-            <view class="cate_des">桌游</view>
-        </view>
-        <view class="cate_com"  bindtap="toDetail">
-            <view class="cate_img"></view>
-            <view class="cate_des">运动 & 健身</view>
-        </view>
-
-    </view>
-    <view class="cate">
-        <view class="cate_com"  bindtap="toDetail">
-            <view class="cate_img"></view>
-            <view class="cate_des">运动 & 健身</view>
-        </view>
-        <view class="cate_com"  bindtap="toDetail">
-            <view class="cate_img"></view>
-            <view class="cate_des">运动 & 健身</view>
-        </view>
-    </view>
-    <view class="cate">
-        <view class="cate_com"  bindtap="toDetail">
-            <view class="cate_img"></view>
-            <view class="cate_des">运动 & 健身</view>
+        <view wx:for="{{cate_data}}">
+            <image src="{{item.tag_img}}" class="cate_img cate_com" mode="aspectFill" bindtap="toDetail" data-id="{{item.id}}"></image>
+            <view class="cate_des">{{item.tag_name}}</view>
         </view>
     </view>
 </view>

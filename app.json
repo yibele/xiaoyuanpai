@@ -1,35 +1,35 @@
 {
-  "pages":[
-    "pages/index/index",
-    "pages/user/user",
-    "pages/detail/detail",
-    "pages/act/act",
-    "pages/cate/cate",
-    "pages/create/create"
-  ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#2C2C30",
-    "navigationBarTitleText": "校园派",
-    "navigationBarTextStyle":"white"
-  },
-  "tabBar": {
-    "list": [
-      {
-        "pagePath": "pages/index/index",
-        "iconPath":"images/find_hei.png",
-        "selectedIconPath":"images/find.png"
-      },
-      {
-        "pagePath": "pages/cate/cate",
-        "iconPath" : "images/list_hei.png",
-        "selectedIconPath":"images/list.png"
-      },
-      {
-          "pagePath" : "pages/user/user",
-          "iconPath":"images/user_hei.png",
-          "selectedIconPath":"images/user.png"
-      }
-    ]
-  }
+    "pages": [
+        "pages/index/index",
+        "pages/cate/cate",
+        "pages/detail/detail",
+        "pages/test/test",
+        "pages/act/act",
+        "pages/user/user",
+        "pages/create/create"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#2C2C30",
+        "navigationBarTitleText": "校园派",
+        "navigationBarTextStyle": "white"
+    },
+    "tabBar": {
+        "list": [{
+                "pagePath": "pages/index/index",
+                "iconPath": "images/find_hei.png",
+                "selectedIconPath": "images/find.png"
+            },
+            {
+                "pagePath": "pages/cate/cate",
+                "iconPath": "images/list_hei.png",
+                "selectedIconPath": "images/list.png"
+            },
+            {
+                "pagePath": "pages/user/user",
+                "iconPath": "images/user_hei.png",
+                "selectedIconPath": "images/user.png"
+            }
+        ]
+    }
 }

@@ -1,68 +1,23 @@
 <view class="container">
     <view class="cate_title">
-        桌游
+        {{tagName}}
     </view>
     <view class="hr"></view>
     <view class="cate_detail">
-        <view class="cate_single" bindtap="toAct">
-            <view class="detail_img"></view>
-            <view class="cate_detail_des">
-                <view class="detail_title font-30 margin-bot-10">
-                    狼人杀活动</view>
-                <view class="detail_time cate_detail_fl"><image src="/images/clock.png" style="width:26rpx;height:26rpx;margin-right:26rpx;"> </image>7/1 19:00</view>
-                <view class="detail_location cate_detail_fl"><image src="/images/location.png" style="width:26rpx;height:26rpx;margin-right:26rpx;"> </image>首都师范大学 北二 513室</view>
-                <view class="detail_location cate_detail_fl"><image src="/images/people.png" style="width:26rpx;height:26rpx;margin-right:26rpx;"> </image>现已有9人报名，还需3人</view>
-            </view>
-        </view>
-        <view class="cate_single">
-            <view class="detail_img"></view>
-            <view class="cate_detail_des">
-                <view class="detail_title font-30 margin-bot-10">
-                    狼人杀活动</view>
-                <view class="detail_time cate_detail_fl"><image src="/images/clock.png" style="width:26rpx;height:26rpx;margin-right:26rpx;"> </image>7/1 19:00</view>
-                <view class="detail_location cate_detail_fl"><image src="/images/location.png" style="width:26rpx;height:26rpx;margin-right:26rpx;"> </image>首都师范大学 北二 513室</view>
-                <view class="detail_location cate_detail_fl"><image src="/images/people.png" style="width:26rpx;height:26rpx;margin-right:26rpx;"> </image>现已有9人报名，还需3人</view>
-            </view>
-        </view>
-        <view class="cate_single">
-            <view class="detail_img"></view>
-            <view class="cate_detail_des">
-                <view class="detail_title font-30 margin-bot-10">
-                    狼人杀活动</view>
-                <view class="detail_time cate_detail_fl"><image src="/images/clock.png" style="width:26rpx;height:26rpx;margin-right:26rpx;"> </image>7/1 19:00</view>
-                <view class="detail_location cate_detail_fl"><image src="/images/location.png" style="width:26rpx;height:26rpx;margin-right:26rpx;"> </image>首都师范大学 北二 513室</view>
-                <view class="detail_location cate_detail_fl"><image src="/images/people.png" style="width:26rpx;height:26rpx;margin-right:26rpx;"> </image>现已有9人报名，还需3人</view>
-            </view>
-        </view>
-        <view class="cate_single">
-            <view class="detail_img"></view>
-            <view class="cate_detail_des">
-                <view class="detail_title font-30 margin-bot-10">
-                    狼人杀活动</view>
-                <view class="detail_time cate_detail_fl"><image src="/images/clock.png" style="width:26rpx;height:26rpx;margin-right:26rpx;"> </image>7/1 19:00</view>
-                <view class="detail_location cate_detail_fl"><image src="/images/location.png" style="width:26rpx;height:26rpx;margin-right:26rpx;"> </image>首都师范大学 北二 513室</view>
-                <view class="detail_location cate_detail_fl"><image src="/images/people.png" style="width:26rpx;height:26rpx;margin-right:26rpx;"> </image>现已有9人报名，还需3人</view>
-            </view>
-        </view>
-        <view class="cate_single">
-            <view class="detail_img"></view>
-            <view class="cate_detail_des">
-                <view class="detail_title font-30 margin-bot-10">
-                    狼人杀活动</view>
-                <view class="detail_time cate_detail_fl"><image src="/images/clock.png" style="width:26rpx;height:26rpx;margin-right:26rpx;"> </image>7/1 19:00</view>
-                <view class="detail_location cate_detail_fl"><image src="/images/location.png" style="width:26rpx;height:26rpx;margin-right:26rpx;"> </image>首都师范大学 北二 513室</view>
-                <view class="detail_location cate_detail_fl"><image src="/images/people.png" style="width:26rpx;height:26rpx;margin-right:26rpx;"> </image>现已有9人报名，还需3人</view>
-            </view>
-        </view>
-        <view class="cate_single">
-            <view class="detail_img"></view>
-            <view class="cate_detail_des">
-                <view class="detail_title font-30 margin-bot-10">
-                    狼人杀活动</view>
-                <view class="detail_time cate_detail_fl"><image src="/images/clock.png" style="width:26rpx;height:26rpx;margin-right:26rpx;"> </image>7/1 19:00</view>
-                <view class="detail_location cate_detail_fl"><image src="/images/location.png" style="width:26rpx;height:26rpx;margin-right:26rpx;"> </image>首都师范大学 北二 513室</view>
-                <view class="detail_location cate_detail_fl"><image src="/images/people.png" style="width:26rpx;height:26rpx;margin-right:26rpx;"> </image>现已有9人报名，还需3人</view>
-            </view>
+        <view class="cate_single" bindtap="toAct" data-id="{{item.id}}" wx:for="{{acts}}">
+            <block wx:if="{{item.id}}">
+                <image class="detail_img" src="{{item.act_img}}" mode="aspectFill"></image>
+                <view class="cate_detail_des">
+                    <view class="detail_title font-30 margin-bot-10">
+                        {{item.act_name}}</view>
+                    <view class="detail_time cate_detail_fl">
+                        <image src="/images/clock.png" style="width:26rpx;height:26rpx;margin-right:26rpx;"> </image>{{item.act_time}}</view>
+                    <view class="detail_location cate_detail_fl">
+                        <image src="/images/location.png" style="width:26rpx;height:26rpx;margin-right:26rpx;"> </image>{{item.act_location}}</view>
+                    <view class="detail_location cate_detail_fl">
+                        <image src="/images/people.png" style="width:26rpx;height:26rpx;margin-right:26rpx;"> </image>现已有{{item.act_now_user}}人报名，还需{{item.act_left_user}}人</view>
+                </view>
+            </block>
         </view>
     </view>
 </view>

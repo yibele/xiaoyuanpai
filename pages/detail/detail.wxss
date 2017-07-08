@@ -12,7 +12,7 @@
 
 .cate_detail_fl {
     margin-bottom: 10rpx;
-    font-size: 24rpx;
+    font-size: 20rpx;
     color: #4F4D4D;
 }
 .cate_detail .detail_img {

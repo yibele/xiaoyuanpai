@@ -1,7 +1,7 @@
 .cate {
     display: flex;
+    -webkit-flex-wrap: wrap;
 }
-
 
 .cate .cate_com {
     margin-top: 40rpx;
@@ -14,9 +14,10 @@
     background-color: #ccc;
     border-radius: 10rpx;
 }
-.cate_com .cate_des {
+
+.cate_des {
     font-size: 30rpx;
-    margin-top : 20rpx;
+    margin-top: 20rpx;
     color: #565555;
     font-weight: 300;
 }

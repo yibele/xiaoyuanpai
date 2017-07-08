@@ -1,26 +1,31 @@
 const request = require('../../utils/request.js');
-// pages/detail/detail.js
+// pages/test/test.js
 Page({
 
     /**
      * 页面的初始数据
      */
     data: {
-        type: 'cateDetail',
-        acts: [],
-        tagName: ''
+        type: 'cate',
+        cata_data: null,
+        code: 10005
     },
 
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad: function(options) {
-        request.getAct(this.data.type, options.id).then(d => {
-            this.setData({
-                acts : d.data,
-                tagName : d.data.tag_name
-            })
+        /**
+        request.get(this.data.type).then(d => {
+            if (d.code === this.data.code) {
+                this.setData({
+                    cate_data: d.data
+                })
+            } else {
+                console.log(d);
+            }
         })
+        */
     },
 
     /**
@@ -70,11 +75,5 @@ Page({
      */
     onShareAppMessage: function() {
 
-    },
-    toAct: function(e) {
-        var id = e.currentTarget.dataset.id;
-        wx.navigateTo({
-            url: '/pages/act/act?id=' + id,
-        })
     }
 })

@@ -9,8 +9,15 @@
                 <scroll-view scroll-x="true" style=" white-space: nowrap; display: flex">
                     <!-- display: inline-block-->
                     <view class="box" wx:for="{{user_act}}">
-                        <view>
-                            <image src="{{item.act_img}}" class="box_img" mode="aspectFill"></image>
+                        <view style="position: relative;">
+                            <navigator url="../act/act?id={{item.id}}&uid={{uid}}">
+                                <image src="{{item.act_img}}" class="box_img" mode="aspectFill"></image>
+                                <view class="mask box_img" style="background:{{background}}">
+                                    <view class="actName">
+                                        {{item.act_name}}
+                                    </view>
+                                </view>
+                            </navigator>
                         </view>
                         <view class="box_des">
                             {{item.act_comment}}
@@ -24,24 +31,32 @@
     <!-- 活动分类 展示 -->
     <view class="scroll-view" wx:for="{{index_data}}">
         <block wx:if="{{item.act_count !=0}}">
-        <view class="title">
-            {{item.tag_name}}
-        </view>
-        <view class="scroll">
-            <scroll-view scroll-x="true" style=" white-space: nowrap; display: flex">
-                <!-- display: inline-block-->
-                <view class="box" wx:for="{{item}}" wx:for-item="v">
-                    <block wx:if="{{v.act_img !=null}}">
-                    <view>
-                        <image src="{{v.act_img}}" class="box_img" mode="aspectFill"></image>
+            <view class="title" bindtap="toDetail" data-id="{{item.id}}">
+                {{item.tag_name}}
+                <view class="more" >更多</view>
+            </view>
+            <view class="scroll">
+                <scroll-view scroll-x="true" style=" white-space: nowrap; display: flex">
+                    <!-- display: inline-block-->
+                    <view class="box" wx:for="{{item}}" wx:for-item="v">
+                        <block wx:if="{{v.act_img !=null}}">
+                            <view style="position: relative">
+                                <navigator url="../act/act?id={{v.id}}&uid={{uid}}">
+                                    <image src="{{v.act_img}}" class="box_img" mode="aspectFill"></image>
+                                    <view class="mask box_img" style="background:{{background}}">
+                                        <view class="actName">
+                                            {{v.act_name}}
+                                        </view>
+                                    </view>
+                                </navigator>
+                            </view>
+                            <view class="box_des">
+                                <text>{{v.act_comment}}</text>
+                            </view>
+                        </block>
                     </view>
-                    <view class="box_des">
-                        <text>{{v.act_comment}}</text>
-                    </view>
-                </block>
-                </view>
-            </scroll-view>
-        </view>
-    </block>
+                </scroll-view>
+            </view>
+        </block>
     </view>
 </view>
