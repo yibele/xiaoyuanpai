@@ -88,5 +88,6 @@ App({
     globalData: {
         userInfo: null,
         userData: null,
+        refreshTag: false
     }
 })

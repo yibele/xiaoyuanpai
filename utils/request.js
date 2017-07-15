@@ -1,5 +1,5 @@
-const API_URL_USER = 'http://www.yibele.com/v1/user';
-const API_URL_ACT = 'http://www.yibele.com/v1/activity';
+const API_URL_USER = 'https://www.yibele.com/v1/user';
+const API_URL_ACT = 'https://www.yibele.com/v1/activity';
 
 
 function act(type, params = '', method = null) {

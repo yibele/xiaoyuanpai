@@ -71,6 +71,7 @@ Page({
     onShareAppMessage: function() {
 
     },
+    
     toAct: function(e) {
         var id = e.currentTarget.dataset.id;
         wx.navigateTo({

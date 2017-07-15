@@ -39,3 +39,28 @@ button {
     margin-left: 40rpx;
     font-size: 30rpx;
 }
+
+/* 正在参加 */
+.cate_detail {
+  padding-left: 20rpx;
+    margin-top:20rpx;
+}
+.cate_single {
+    display: flex;
+    margin-bottom: 20rpx;
+}
+
+.cate_single .cate_detail_des {
+    padding-left: 30rpx;
+}
+
+.cate_detail_fl {
+    margin-bottom: 10rpx;
+    font-size: 20rpx;
+    color: #4F4D4D;
+}
+.cate_detail .detail_img {
+    width: 160rpx;
+    height: 160rpx;
+    background-color: #ccc;
+}

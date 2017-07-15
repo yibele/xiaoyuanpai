@@ -19,12 +19,12 @@ Page({
      * 生命周期函数--监听页面加载
      */
     onLoad: function (options) {
-        this.initData();
+        this.initData(options);
         this.getAct(options,this);
     }
     ,
 
-    initData : function(){
+    initData : function(options){
         var uid = wx.getStorageSync('uid');
         var count = wx.getStorageSync('actCount');
         this.setData({
@@ -42,7 +42,7 @@ Page({
     * 获取活动报名页面
     */
     getAct : (options,that)=> {
-        request.getAct('show/' + options.id + '/user/' + options.uid, '').then(
+        request.getAct('show/' + options.id + '/user/' + that.data.uid, '').then(
             d => {
                 if(d.code === 10007) {
                     that.setData({
@@ -125,7 +125,10 @@ Page({
                      wx.setStorageSync('uid', d.data.user.user_id);
                      wx.setStorageSync('userAct', d.data.act);
                      wx.setStorageSync('actCount',d.data.actCount);
+                     app.globalData.refreshTag = true;
                  })
+
+                 
              }
          })
 
@@ -151,7 +154,10 @@ Page({
                       wx.setStorageSync('uid', d.data.user.user_id);
                       wx.setStorageSync('userAct', d.data.act);
                       wx.setStorageSync('actCount',d.data.actCount);
+                      app.globalData.refreshTag = true;
                   })
+
+                 
               }
           })
 
